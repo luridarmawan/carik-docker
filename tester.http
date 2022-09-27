@@ -1,0 +1,19 @@
+@BaseURL = http://course.carik.test/carik.bin/
+@BaseURL = http://localhost:8080/carik/carik/
+#@BaseURL = http://course.carik.id/carik
+
+curl {{BaseURL}} \
+  -H "DeviceID: demo" \
+  -d '{
+  "message": {
+    "message_id": 0,
+    "text": "docker test",
+    "chat": {
+      "id": 0
+    },
+    "from": {
+      "id": "your-id",
+      "name": "Nama Saya"
+    }
+  }
+}'

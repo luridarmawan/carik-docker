@@ -1,0 +1,6 @@
+[EchoTest]
+say=echo @Anything
+
+[DockerTest]
+say=docker test
+say=test docker

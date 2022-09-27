@@ -1,0 +1,6 @@
+
+[EchoTest]
+say=json:https://public-nlp.carik.id/services/echo/
+
+[DockerTest]
+say=Test Carik Bot dengan docker berhasil

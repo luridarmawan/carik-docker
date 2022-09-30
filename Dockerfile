@@ -4,6 +4,7 @@ MAINTAINER Luri Darmawan <luri@carik.id>
 
 WORKDIR /projects
 COPY files/run.sh /app/
+RUN chmod +x /app/run.sh
 
 # update fastplaz
 # RUN cd /projects/vendors/fastplaz/ && git pull origin development

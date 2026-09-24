@@ -1,0 +1,7 @@
+.git
+.github
+.env
+.env.local
+*.log
+ztemp
+carik-linux.tar.gz.bak

@@ -4,16 +4,16 @@ services:
       context: .
       dockerfile: Dockerfile
     image: carik-bot:latest
-    container_name: carik-bot
     restart: unless-stopped
     ports:
       - "${HOST_PORT:-8080}:80"
     environment:
       - TELEGRAM_TOKEN=${TELEGRAM_TOKEN:-}
       - PORT=80
+      - HOST_PORT=${HOST_PORT:-8080}
     volumes:
       - ./config.json:/projects/carik/config/config.json
-      - ./files/nlp:/projects/carik/files/nlp
+      - ./files/nlp:/projects/carik/files/nlp:ro
       - carik_data:/projects/carik/data
       - carik_temp:/projects/carik/ztemp
 
